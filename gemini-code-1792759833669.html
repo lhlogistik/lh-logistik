@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&H Logistik UG (haftungsbeschränkt) | Entkernung & Sanierung Raum Stuttgart</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0A2540',
+                            blue: '#00529B',
+                            cyan: '#00A8E8',
+                            dark: '#061727',
+                            light: '#F4F7FA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .poly-clip {
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        }
+        .poly-clip-right {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        @media (max-width: 768px) {
+            .poly-clip, .poly-clip-right {
+                clip-path: none;
+            }
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(0, 82, 155, 0.85) 100%), url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen selection:bg-brand-cyan selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-brand-dark text-white text-sm py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-6 text-xs sm:text-sm">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-cyan"></i> Täglich aktiv im <strong>Raum Stuttgart</strong></span>
+                <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-building text-brand-cyan"></i> Sitz: 63526 Erlensee</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs sm:text-sm">
+                <a href="tel:+4915561592909" class="hover:text-brand-cyan transition flex items-center gap-1 font-bold"><i class="fa-solid fa-phone text-brand-cyan"></i> +49 155 61592909</a>
+                <a href="mailto:lhlogistik@outlook.de" class="hover:text-brand-cyan transition hidden sm:flex items-center gap-1"><i class="fa-solid fa-envelope text-brand-cyan"></i> lhlogistik@outlook.de</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-brand-navy p-2 rounded text-white font-heading font-black text-2xl tracking-tighter">
+                    L&H
+                </div>
+                <div>
+                    <div class="font-heading font-black text-2xl text-brand-navy leading-none">L&H Logistik UG</div>
+                    <div class="text-xs text-gray-500 font-semibold tracking-wider">(haftungsbeschränkt)</div>
+                </div>
+            </a>
+
+            <!-- NAV LINKS -->
+            <nav class="hidden md:flex space-x-8 font-heading font-bold text-sm text-brand-navy uppercase tracking-wider">
+                <a href="#leistungen" class="hover:text-brand-cyan transition">Leistungen</a>
+                <a href="#ueber-uns" class="hover:text-brand-cyan transition">Über Uns</a>
+                <a href="#nachweise" class="hover:text-brand-cyan transition">Nachweise</a>
+                <a href="#kontakt" class="hover:text-brand-cyan transition">Kontakt</a>
+            </nav>
+
+            <!-- CTA BUTTON -->
+            <a href="#kontakt" class="hidden sm:inline-block bg-brand-cyan hover:bg-sky-400 text-white font-heading font-bold text-sm px-5 py-2.5 rounded shadow transition transform hover:-translate-y-0.5">
+                Angebot Anfragen
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg text-white py-16 md:py-24 relative overflow-hidden border-b-4 border-brand-cyan">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-block bg-brand-cyan/20 border border-brand-cyan text-brand-cyan px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    Ihr regionaler Fachbetrieb
+                </div>
+                <h1 class="font-heading font-black text-3xl sm:text-5xl uppercase leading-tight tracking-tight">
+                    Zuverlässig. <br><span class="text-brand-cyan">Kompetent.</span> <br>Professionell.
+                </h1>
+                <p class="text-lg text-gray-200 max-w-xl">
+                    Ihr Partner für sichere und fachgerechte Sanierungs- und Abbrucharbeiten – jetzt auch verstärkt im <strong>Raum Stuttgart</strong>.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#kontakt" class="bg-brand-cyan hover:bg-sky-400 text-white font-heading font-bold px-6 py-3 rounded shadow-lg transition flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Jetzt Anfragen
+                    </a>
+                    <a href="tel:+4915561592909" class="bg-white/10 hover:bg-white/20 text-white font-heading font-bold px-6 py-3 rounded backdrop-blur transition flex items-center gap-2 border border-white/20">
+                        <i class="fa-solid fa-phone text-brand-cyan"></i> Direct Call
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5">
+                <div class="bg-brand-navy/90 p-6 rounded-lg border border-white/10 shadow-2xl backdrop-blur-sm space-y-4">
+                    <div class="border-b border-gray-700 pb-3">
+                        <span class="text-xs text-brand-cyan font-bold uppercase tracking-widest block">Ansprechpartner</span>
+                        <h3 class="font-heading font-black text-xl text-white">Mohammad Khadije</h3>
+                        <p class="text-xs text-gray-400">Geschäftsführer</p>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan"></i>
+                            <span>Entkernung & Abbruch</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan"></i>
+                            <span>Zertifizierte Asbestsanierung</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan"></i>
+                            <span>Schadstoffsanierung nach TRGS</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN SERVICES SECTION -->
+    <section id="leistungen" class="py-16 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="font-heading font-black text-3xl text-brand-navy uppercase">Unsere Kernkompetenzen</h2>
+            <div class="w-20 h-1 bg-brand-cyan mx-auto mt-2 mb-4"></div>
+            <p class="text-gray-600">Fachgerechte Ausführung nach allen gesetzlichen Sicherheits- und Umweltstandards.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- SERVICE 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transition transform hover:-translate-y-1 flex flex-col">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brand-navy text-brand-cyan rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fa-solid fa-house-chimney-crack"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-navy uppercase mb-2">Entkernung</h3>
+                        <p class="text-gray-600 text-sm mb-4">Rückbau bis auf den Rohbau – präzise, termingerecht und sauber.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transition transform hover:-translate-y-1 flex flex-col">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brand-navy text-brand-cyan rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-navy uppercase mb-2">Abbrucharbeiten</h3>
+                        <p class="text-gray-600 text-sm mb-4">Effizienter Rückbau für eine sichere und saubere Zukunft.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transition transform hover:-translate-y-1 flex flex-col">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brand-navy text-brand-cyan rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fa-solid fa-mask-ventilator"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-navy uppercase mb-2">Asbestsanierung</h3>
+                        <p class="text-gray-600 text-sm mb-4">Fachgerechte Entfernung und zertifizierte Entsorgung von Asbest.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transition transform hover:-translate-y-1 flex flex-col">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brand-navy text-brand-cyan rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fa-solid fa-biohazard"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-navy uppercase mb-2">Schadstoff­sanierung</h3>
+                        <p class="text-gray-600 text-sm mb-4">Schutz für Mensch, Umwelt und Gebäude vor gefährlichen Stoffen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SACHKUNDENACHWEISE -->
+    <section id="nachweise" class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-brand-cyan font-bold uppercase tracking-wider text-xs block mb-2">Zertifiziert & Geprüft</span>
+                <h2 class="font-heading font-black text-3xl uppercase mb-6">Sachkundenachweise</h2>
+                <p class="text-gray-300 mb-6">
+                    Sicherheit steht bei allen Sanierungs- und Abbrucharbeiten an erster Stelle. Unser Fachbetrieb verfügt über alle notwendigen gesetzlichen Sachkundenachweise.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 bg-white/5 p-4 rounded border border-white/10">
+                        <i class="fa-solid fa-award text-brand-cyan text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-heading font-bold text-lg">TRGS 519</h4>
+                            <p class="text-sm text-gray-300">Asbestarbeiten (Anlage 3) – Fachkunde für Abbruch-, Sanierungs- und Instandhaltungsarbeiten.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white/5 p-4 rounded border border-white/10">
+                        <i class="fa-solid fa-award text-brand-cyan text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-heading font-bold text-lg">TRGS 521</h4>
+                            <p class="text-sm text-gray-300">Arbeiten mit alter Mineralwolle (KMF) – Schutzmaßnahmen & fachgerechter Umgang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white text-brand-navy p-8 rounded-lg shadow-2xl space-y-6">
+                <h3 class="font-heading font-black text-2xl uppercase border-b pb-4">Firmendaten</h3>
+                <div class="space-y-3 text-sm">
+                    <p class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500 font-semibold">Geschäftsführer:</span>
+                        <span class="font-bold">Mohammad Khadije</span>
+                    </p>
+                    <p class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500 font-semibold">Sitz der Gesellschaft:</span>
+                        <span class="font-bold">Erlensee</span>
+                    </p>
+                    <p class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500 font-semibold">Handelsregister:</span>
+                        <span class="font-bold">HRB 101311</span>
+                    </p>
+                    <p class="flex justify-between pb-2">
+                        <span class="text-gray-500 font-semibold">Registergericht:</span>
+                        <span class="font-bold">Hanau</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="kontakt" class="py-16 max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-12 gap-8">
+            <div class="md:col-span-5 space-y-6">
+                <div>
+                    <h2 class="font-heading font-black text-3xl text-brand-navy uppercase">Kontaktieren Sie Uns</h2>
+                    <div class="w-16 h-1 bg-brand-cyan mt-2 mb-4"></div>
+                    <p class="text-gray-600">Lassen Sie sich unverbindlich zu Ihrem Bauprojekt beraten.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-10 h-10 bg-brand-cyan/10 text-brand-cyan rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold">Adresse</div>
+                            <div class="font-semibold text-sm">Lindenstraße 12, 63526 Erlensee</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-10 h-10 bg-brand-cyan/10 text-brand-cyan rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold">Telefon</div>
+                            <a href="tel:+4915561592909" class="font-semibold text-sm hover:text-brand-cyan transition">+49 155 61592909</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-10 h-10 bg-brand-cyan/10 text-brand-cyan rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold">E-Mail</div>
+                            <a href="mailto:lhlogistik@outlook.de" class="font-semibold text-sm hover:text-brand-cyan transition">lhlogistik@outlook.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="md:col-span-7 bg-white p-8 rounded-lg shadow-xl border border-gray-100">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                    <h3 class="font-heading font-bold text-xl text-brand-navy border-b pb-3">Anfrage senden</h3>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Name *</label>
+                            <input type="text" name="name" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-brand-cyan outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Telefon</label>
+                            <input type="tel" name="phone" class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-brand-cyan outline-none transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">E-Mail *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-brand-cyan outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Ihre Nachricht *</label>
+                        <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-brand-cyan outline-none transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-navy hover:bg-brand-blue text-white font-heading font-bold py-3 rounded shadow transition">
+                        Nachricht Absenden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLOGAN BANNER -->
+    <section class="bg-brand-cyan text-white py-8 text-center font-heading font-black text-2xl uppercase tracking-wider">
+        Sanieren | Schützen | Zukunft sichern
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-400 py-8 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <p>&copy; L&H Logistik UG (haftungsbeschränkt). Alle Rechte vorbehalten.</p>
+            <p class="text-xs">Sitz: Erlensee | Handelsregister: HRB 101311 | Registergericht: Hanau</p>
+        </div>
+    </footer>
+
+</body>
+</html>
